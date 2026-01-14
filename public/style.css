@@ -1,0 +1,88 @@
+/* Reset ringan */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Background halaman */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f5f5, #e8e1d9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Card utama */
+.container {
+    background: #ffffff;
+    margin-top: 60px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 420px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Judul */
+.container h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #4e342e;
+    font-size: 26px;
+}
+
+/* Form layout */
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* Dropdown */
+select {
+    flex: 1.4;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Input jumlah */
+input[type="number"],
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Focus effect */
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #795548;
+    box-shadow: 0 0 0 2px rgba(121,85,72,0.2);
+}
+
+/* Tombol beli */
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #795548;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+/* Hover & active */
+button:hover {
+    background: #6d4c41;
+}
+
+button:active {
+    transform: scale(0.97);
+}

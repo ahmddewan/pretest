@@ -1,0 +1,12 @@
+<h2>Input Pembelian</h2>
+<form method="POST" action="/beli">
+  <select name="produk_id">
+    <% produk.forEach(p => { %>
+      <option value="<%= p.id %>">
+        <%= p.nama_produk %> (Stok: <%= p.jumlah %>)
+      </option>
+    <% }) %>
+  </select>
+  <input type="number" name="qty" required />
+  <button type="submit">Beli</button>
+</form>
